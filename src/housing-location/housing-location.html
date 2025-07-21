@@ -1,0 +1,25 @@
+<section
+ [routerLink]="['/details', housingLocation().id]"
+  class="bg-white rounded-2xl max-w-sm shadow-lg overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300 ease-in-out"
+>
+  <img
+    [src]="housingLocation().photo"
+    alt="Exterior photo of {{ housingLocation().name }}"
+    crossorigin
+    class="w-full h-48 object-cover object-center"
+  />
+
+  <div class="p-6">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">
+      {{ housingLocation().name }}
+    </h2>
+    <p class="text-gray-600 mb-4">
+      📍 {{ housingLocation().city }}, {{ housingLocation().state }}
+    </p>
+    <a
+      class="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition"
+    >
+      Learn More
+    </a>
+  </div>
+</section>

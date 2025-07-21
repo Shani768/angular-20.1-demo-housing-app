@@ -1,0 +1,26 @@
+<!-- Search Form Section -->
+<section class="p-6 bg-gray-100 rounded shadow mb-10">
+  <form class="flex flex-wrap gap-4 items-center justify-center">
+    <input
+      type="text"
+      #filter
+      placeholder="Filter by city"
+      class="flex-1 min-w-[250px] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 px-4 py-2 rounded-md shadow-sm transition duration-200"
+    />
+    <button
+      type="button"
+      (click)="filterResults(filter.value)"
+      class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-200 shadow"
+    >
+      Search
+    </button>
+  </form>
+</section>
+
+<!-- Housing Results Section -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  @for(housingLocation of filteredLocationList; track $index) {
+        <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
+      }
+</section>
+
