@@ -2,6 +2,30 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.1.
 
+
+# 🏠 Angular 20 Housing Demo App
+
+A modern real estate listing demo application built with **Angular 20**, showcasing property listings, filtering, responsive design, and more. Ideal for learning Angular and frontend architecture patterns.
+
+## 🚀 Features
+
+- 🏡 View detailed property listings
+- 📱 Fully responsive UI for all devices
+- 🔍 Simple Functionality search
+- 🧩 Angular 20 standalone components
+- 🌈 Tailwind CSS for modern styling (if used)
+- 🔗 angular Routing
+- 🔄 Property fetching using Angular's Dependency Injection
+
+## 📸 Screenshots
+
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://shani-project-videos.s3.eu-north-1.amazonaws.com/housing-image-01.png" width="400" height="700" />
+  <img src="https://shani-project-videos.s3.eu-north-1.amazonaws.com/housing-image-02.png" width="400" height="700" />
+</div>
+
+
 ## Development server
 
 To start a local development server, run:
